@@ -1,0 +1,44 @@
+{% extends "students/base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<style>
+    /* Style for your h1 inside the text-center div */
+    .text-center h1 {
+        color: darkblue;                  /* Change text color */
+        font-size: 58px;                   /* Increase size */
+        font-family: 'Georgia', serif;     /* Change font */
+        font-weight: bold;                 /* Make bold */
+        background-color: #f0f8ff;         /* Light background for box */
+        padding: 24px;                     /* Space inside box */
+        border-radius: 10px;               /* Rounded corners */
+        display: inline-block;             /* Keeps box around text */
+        border: 5px solid #00008B;          /* Border color */
+        margin-top:5px;
+    }
+</style>
+
+<style>
+    .btn-primary{
+       margin-top: 29px;
+       font-size: 25px;
+       color:white;
+       background-color:green;
+
+    }
+</style>
+
+<style> 
+    .texts{
+        margin-top:7px;
+        color: red;
+    }
+</style>
+  <div class="text-center">
+    <h1>Welcome to Student Management System</h1>
+    <p><a class="btn btn-primary" href="{% url 'student_list' %}">View Students</a></p>
+    <p> !---------------------------------------WELCOME-----------------------------------!</p>
+    <div class="texts">
+        <p> This application is developed exclusively for educational institutions such as schools and colleges. Its primary purpose is to manage and organize student-related information efficiently. The system is designed to handle tasks like maintaining student records, tracking attendance, storing academic details, and generating reports. Since its features are focused entirely on student data management, it is not intended for other types of organizations or purposes. This makes it an ideal solution for institutions seeking a streamlined and user-friendly platform to handle student information securely and effectively.</p>
+  </div>
+{% endblock %}
